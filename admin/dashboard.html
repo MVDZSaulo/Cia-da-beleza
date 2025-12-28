@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="css/global.css">
+  <meta charset="UTF-8" />
+  <title>Dashboard - Recepção</title>
+</head>
+<body>
+
+  <h1>Agendamentos</h1>
+
+  <!-- FILTROS -->
+  <div>
+    <button onclick="setFiltro('todos')">Todos</button>
+    <button onclick="setFiltro('hoje')">Hoje</button>
+    <button onclick="setFiltro('agendado')">Pendentes</button>
+    <button onclick="setFiltro('atendido')">Atendidos</button>
+  </div>
+
+  <ul id="listaAgendamentos"></ul>
+
+  <script type="module" src="../js/dashboard.js"></script>
+  <script type="module" src="js/auth-guard.js"></script>
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>
