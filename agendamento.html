@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="css/global.css">
+  <meta charset="UTF-8" />
+  <title>Agendamento - Salão</title>
+</head>
+<body>
+
+  <h1>Agendar Serviço</h1>
+
+  <form id="formAgendamento">
+    <input type="text" id="nome" placeholder="Nome do cliente" required />
+    
+    <select id="servico" required>
+      <option value="">Selecione o serviço</option>
+      <option>Corte</option>
+      <option>Barba</option>
+      <option>Coloração</option>
+      <option>Escova</option>
+    </select>
+
+    <input type="date" id="data" required />
+    <input type="time" id="hora" required />
+
+    <button type="submit">Agendar</button>
+  </form>
+
+  <script type="module" src="js/agendamento.js"></script>
+</body>
+</html>
