@@ -1,0 +1,115 @@
+/* public/css/global.css */
+
+:root {
+  --primary-color: #d4a373; /* Tom de madeira/dourado suave */
+  --secondary-color: #faedcd; /* Creme claro */
+  --text-color: #333;
+  --bg-color: #fdfcf5;
+  --white: #ffffff;
+  --success: #606c38;
+  --danger: #bc4749;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Formulários e Cards */
+form, .card-container {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, button {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #b08968;
+}
+
+/* Listas (Agendamentos/Clientes) */
+ul {
+  list-style: none;
+  width: 100%;
+  max-width: 600px;
+}
+
+li {
+  background: var(--white);
+  border-left: 5px solid var(--primary-color);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li strong {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+li button {
+  width: auto;
+  margin-top: 10px;
+  font-size: 14px;
+  background-color: var(--success);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  form, ul {
+    width: 100%;
+  }
+}
